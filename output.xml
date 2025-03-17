@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-17T15:35:48.698977" rpa="false" schemaversion="5">
+<suite id="s1" name="Api Demos" source="c:\Users\Administrateur\Desktop\apiDebug\Tests\api_demos.robot">
+<test id="s1-t1" name="Test Seek bar" line="30">
+<kw name="Given I Open api_debug" owner="keywords">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-03-17T15:35:48.862101" elapsed="8.375055"/>
+</kw>
+<status status="PASS" start="2025-03-17T15:35:48.861251" elapsed="8.376280"/>
+</kw>
+<kw name="When I scroll to seek bar" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T15:35:59.239520" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T15:35:57.238506" elapsed="2.005245"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T15:35:59.246860" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Views"]'.</msg>
+<msg time="2025-03-17T15:36:01.276692" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Views"]</msg>
+<arg>//android.widget.TextView[@content-desc="Views"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T15:35:59.244247" elapsed="2.032660"/>
+</kw>
+<kw name="Swipe" owner="AppiumLibrary">
+<arg>start_x=600</arg>
+<arg>start_y=2600</arg>
+<arg>offset_x=600</arg>
+<arg>offset_y=500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" start="2025-03-17T15:36:01.277060" elapsed="2.258278"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T15:36:05.536477" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T15:36:03.535622" elapsed="2.001543"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T15:36:05.539368" level="INFO">Clicking element '//android.widget.TextView[@content-desc="Seek Bar"]'.</msg>
+<msg time="2025-03-17T15:36:07.191366" level="INFO">xpath criteria: //android.widget.TextView[@content-desc="Seek Bar"]</msg>
+<arg>//android.widget.TextView[@content-desc="Seek Bar"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T15:36:05.537654" elapsed="1.653970"/>
+</kw>
+<status status="PASS" start="2025-03-17T15:35:57.238053" elapsed="9.953715"/>
+</kw>
+<kw name="And I set seek bar to 88" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T15:36:09.193280" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T15:36:07.192728" elapsed="2.001157"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-03-17T15:36:09.196884" level="INFO">Clicking element '//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]'.</msg>
+<msg time="2025-03-17T15:36:09.912676" level="INFO">xpath criteria: //android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</msg>
+<arg>//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T15:36:09.194410" elapsed="0.718479"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-03-17T15:36:09.913756" level="INFO">Typing text '88' into text field '//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]'</msg>
+<msg time="2025-03-17T15:36:09.972527" level="INFO">xpath criteria: //android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</msg>
+<arg>//android.widget.SeekBar[@resource-id="io.appium.android.apis:id/seek"]</arg>
+<arg>88</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-03-17T15:36:09.913029" elapsed="0.059671"/>
+</kw>
+<status status="PASS" start="2025-03-17T15:36:07.192318" elapsed="2.780488"/>
+</kw>
+<kw name="Then The seek bar should be at 88" owner="keywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-17T15:36:11.974122" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-17T15:36:09.973717" elapsed="2.000827"/>
+</kw>
+<kw name="Get Text" owner="AppiumLibrary">
+<msg time="2025-03-17T15:36:12.026085" level="INFO">Element '//android.widget.TextView[@resource-id="io.appium.android.apis:id/progress"]' text is '88 from touch=true' </msg>
+<msg time="2025-03-17T15:36:12.026252" level="INFO">xpath criteria: //android.widget.TextView[@resource-id="io.appium.android.apis:id/progress"]</msg>
+<msg time="2025-03-17T15:36:12.026358" level="INFO">${curseur} = 88 from touch=true</msg>
+<var>${curseur}</var>
+<arg>//android.widget.TextView[@resource-id="io.appium.android.apis:id/progress"]</arg>
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<status status="PASS" start="2025-03-17T15:36:11.975130" elapsed="0.051287"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${curseur}</arg>
+<arg>88 from touch=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-03-17T15:36:12.026556" elapsed="0.000197"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>La valeur ${curseur} est la bonne : 88</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-03-17T15:36:12.026856" elapsed="0.000671"/>
+</kw>
+<status status="PASS" start="2025-03-17T15:36:09.973426" elapsed="2.054221"/>
+</kw>
+<doc>Ouvrir l'application api_debug</doc>
+<status status="PASS" start="2025-03-17T15:35:48.860523" elapsed="23.167640"/>
+</test>
+<status status="PASS" start="2025-03-17T15:35:48.702496" elapsed="23.327709"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api Demos" id="s1" pass="1" fail="0" skip="0">Api Demos</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
